@@ -12,7 +12,7 @@ const partnerLogos = [ gen, perk, foster, woods, bau, die, ];
 
 const PartnersSection = () => {
   return (
-    <div className="partners-section">
+    <div className="partners-section" id="partners-section">
       <h2>Our Partners</h2>
       <div className="partners-grid">
         {partnerLogos.map((logo, index) => (
