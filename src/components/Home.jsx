@@ -33,7 +33,7 @@ const Home = () => {
             src={Arrow}
             alt="Scroll Down"
             className="home-arrow"
-            onClick={() => scrollToSection("exterior-section")}
+            onClick={() => scrollToSection("Exterior-section")}
           />
         </div>
       </div>

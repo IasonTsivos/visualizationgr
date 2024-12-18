@@ -6,7 +6,21 @@
   font-style: normal;
   margin: 0;
   padding: 0;
-  background-color: #FFF0D1;
+  background-color: #292929;
+}
+
+/* Title styling for the statistics section */
+.statistics-title {
+  font-family: "Mea Culpa", cursive; /* Use the Google Font */
+  font-size: 8rem; /* Adjust size as needed */
+  color: #FFF0D1; /* Match the style with your theme */
+  text-align: center;
+  margin: 40px 0 20px; /* Add spacing above and below */
+}
+.statistics-title h1 {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #FFF0D1; /* Slightly lighter text for description */
 }
 
 .statistics-section {
@@ -14,7 +28,7 @@
   justify-content: center;
   gap: 40px; /* Space between stats */
   padding: 40px 20px; /* Vertical and horizontal padding */
-  background-color: #FFF0D1; /* Light gray background for contrast */
+  background-color: #292929; /* Light gray background for contrast */
 }
 
 .stat {
@@ -24,13 +38,13 @@
 .stat h1 {
   font-size: 2.5rem;
   margin: 0;
-  color: #664343; /* Dark text for the numbers */
+  color: #FFF0D1; /* Dark text for the numbers */
 }
 
 .stat p {
   margin: 10px 0 0;
   font-size: 1rem;
-  color: #664343; /* Slightly lighter text for description */
+  color: #FFF0D1; /* Slightly lighter text for description */
 }
 
 /* Divider Styling */
@@ -38,7 +52,7 @@
 .divider {
   width: 80%; /* 80% of the screen width */
   height: 1px; /* Thin line */
-  background-color: #664343; /* Light gray color */
+  background-color: #FFF0D1; /* Light gray color */
   margin: 20px auto; /* Vertical spacing and auto centers horizontally */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); /* Optional soft shadow for depth */
 }

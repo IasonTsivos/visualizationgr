@@ -1,0 +1,53 @@
+/* Container for the partners section */
+.partners-section {
+    padding: 40px;
+    background-color: #292929;
+    text-align: center;
+    width: 80%;
+    margin: 40px auto; /* Center the section horizontally */
+    border-radius: 10px;
+  }
+  
+  /* Title Styling */
+  .partners-section h2 {
+    font-size: 2.5rem;
+    color: #FFF0D1;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Grid layout for logos */
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  /* Styling for each logo container */
+  .partner-logo {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Logo Images */
+  .partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure logos are contained */
+    filter: invert(1);
+  }
+  
+  /* Hover Effect */
+  .partner-logo:hover {
+    transform: scale(1.5);
+  }
+  

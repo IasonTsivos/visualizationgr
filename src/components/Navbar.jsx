@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import Home from "../assets/icons/house-chimney.svg";
-import Grad from "../assets/icons/blueprint.svg";
-import Code from "../assets/icons/couch.svg";
+import Grad from "../assets/icons/couch.svg";
+import Code from "../assets/icons/blueprint.svg";
 import bc from "../assets/icons/corporate-alt.svg";
 import tools from "../assets/icons/mail-plus.svg";
 import Logo from "../assets/icons/logo.png"; 
@@ -32,11 +32,11 @@ const Navbar = () => {
         </div>
         <div className="nav-item" onClick={() => handleScroll('interior-section')}>
           <img src={Grad} alt="Graduation Icon" className="nav-icon" />
-          <span className="nav-title">Exterior Design</span>
-        </div>
-        <div className="nav-item" onClick={() => handleScroll('interior-section')}>
-          <img src={Code} alt="Code Icon" className="nav-icon" />
           <span className="nav-title">Interior Design</span>
+        </div>
+        <div className="nav-item" onClick={() => handleScroll('Exterior-section')}>
+          <img src={Code} alt="Code Icon" className="nav-icon" />
+          <span className="nav-title">Exterior Design</span>
         </div>
         <div className="nav-item" onClick={() => handleScroll('')}>
           <img src={bc} alt="Briefcase Icon" className="nav-icon" />
