@@ -15,6 +15,14 @@ function App() {
       {/* Title for the statistics section */}
       <h2 className="statistics-title">Visualization Gr</h2>
 
+      {/* Company Description */}
+      <p className="company-description">
+        At Visualization Gr, we specialize in transforming ideas into breathtaking visuals.
+        With over seven years of experience, our team of creative professionals has partnered 
+        with world-renowned companies to deliver cutting-edge architectural designs and visualization services. 
+        From concept to completion, we ensure every detail reflects the essence of your vision.
+      </p>
+
       <section className="statistics-section">
         <div className="stat">
           <h1>7+</h1>

@@ -1,5 +1,5 @@
 // src/components/InteriorSection.jsx
-import React from "react";
+import React, { useState } from "react";
 import "./InteriorSection.css"; // Import CSS for the layout
 
 // Import images
@@ -9,21 +9,75 @@ import interior3 from "../assets/images/interior3.jpg";
 import interior4 from "../assets/images/interior4.jpg";
 import interior5 from "../assets/images/interior5.jpg";
 import interior6 from "../assets/images/interior6.jpg";
+import sun from "../assets/icons/sun.svg";
+import heart from "../assets/icons/heart.svg";
+import stars from "../assets/icons/stars.svg";
 
 const InteriorSection = () => {
   // Array of imported images
   const images = [interior1, interior2, interior3, interior4, interior5, interior6];
 
+  const cards = [
+    { title: "Priority to Comfort", icon: heart },
+    { title: "Bright & Sunny Spaces", icon: sun },
+    { title: "Innovative Designs", icon: stars },
+  ];
+
+  // State to handle the modal view
+  const [modalImage, setModalImage] = useState(null);
+
+  // Function to open the modal
+  const openModal = (image) => {
+    setModalImage(image);
+  };
+
+  // Function to close the modal
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
   return (
     <div className="interior-section" id="interior-section">
       <h2>Interior Design Gallery</h2>
-      <div className="interior-grid">
-        {images.map((image, index) => (
-          <div className="interior-grid-item" key={index}>
-            <img src={image} alt={`Interior ${index + 1}`} className="interior-image" />
+      {/* Cards Section */}
+      <div className="card-container">
+        {cards.map((card, index) => (
+          <div className="card" key={index}>
+            <div className="card-icon">
+              <img src={card.icon} alt={`${card.title} Icon`} />
+            </div>
+            <div className="card-content">
+              <h3>{card.title}</h3>
+            </div>
           </div>
         ))}
       </div>
+
+      {/* Grid of Images */}
+      <div className="interior-grid">
+        {images.map((image, index) => (
+          <div className="interior-grid-item" key={index}>
+            <img
+              src={image}
+              alt={`Interior ${index + 1}`}
+              className="interior-image"
+              onClick={() => openModal(image)} // Open modal on click
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Modal for viewing image */}
+      {modalImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={modalImage} alt="Enlarged Interior" />
+            <button className="close-button" onClick={closeModal}>
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

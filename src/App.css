@@ -1,5 +1,6 @@
 /* src/App.css */
 .App {
+  width: 100%;
   text-align: center;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -9,6 +10,18 @@
   background-color: #292929;
 }
 
+/* Styling for the company description */
+.company-description {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem; /* Adjust as needed */
+  color: #FFF0D1; /* Match your theme */
+  text-align: center;
+  margin: 20px auto 40px; /* Space above and below */
+  max-width: 1000px; /* Limit the paragraph width for readability */
+  line-height: 1.6; /* Improve readability */
+}
+
+
 /* Title styling for the statistics section */
 .statistics-title {
   font-family: "Mea Culpa", cursive; /* Use the Google Font */
@@ -17,6 +30,8 @@
   text-align: center;
   margin: 40px 0 20px; /* Add spacing above and below */
 }
+
+
 .statistics-title h1 {
   margin: 10px 0 0;
   font-size: 1rem;
@@ -57,3 +72,12 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); /* Optional soft shadow for depth */
 }
 
+@media screen and (max-width: 768px) {
+  .statistics-title {
+    font-family: "Mea Culpa", cursive; /* Use the Google Font */
+    font-size: 5rem; /* Adjust size as needed */
+    color: #FFF0D1; /* Match the style with your theme */
+    text-align: center;
+    margin: 40px 0 20px; /* Add spacing above and below */
+  }
+}
