@@ -42,7 +42,7 @@ const Navbar = () => {
           <img src={bc} alt="Briefcase Icon" className="nav-icon" />
           <span className="nav-title">Partners</span>
         </div>
-        <div className="nav-item" onClick={() => handleScroll('')}>
+        <div className="nav-item" onClick={() => handleScroll('contact-section')}>
           <img src={tools} alt="Tools Icon" className="nav-icon" />
           <span className="nav-title">Contact</span>
         </div>

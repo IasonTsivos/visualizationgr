@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import "./InteriorSection.css"; // Import CSS for the layout
 
 // Import images
-import interior1 from "../assets/images/interior1.jpg";
-import interior2 from "../assets/images/interior2.jpg";
-import interior3 from "../assets/images/interior3.jpg";
-import interior4 from "../assets/images/interior4.jpg";
-import interior5 from "../assets/images/interior5.jpg";
-import interior6 from "../assets/images/interior6.jpg";
+import interior1 from "../assets/images/ex1.jpg";
+import interior2 from "../assets/images/ex2.jpg";
+import interior3 from "../assets/images/ex3.jpg";
+import interior4 from "../assets/images/ex4.jpg";
+import interior5 from "../assets/images/ex5.jpg";
+import interior6 from "../assets/images/ex6.jpg";
 import sun from "../assets/icons/sun.svg";
 import modern from "../assets/icons/modern.svg";
 import tree from "../assets/icons/tree.svg";
