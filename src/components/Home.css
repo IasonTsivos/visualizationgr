@@ -74,6 +74,7 @@
   }
 
   .home-section {
+    width: auto;
     height: auto; /* Allow height to adjust based on content */
   }
 }

@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   background-color: #292929;
+  overflow: hidden;
 }
 
 /* Styling for the company description */
@@ -73,6 +74,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .statistics-title {
     font-family: "Mea Culpa", cursive; /* Use the Google Font */
     font-size: 5rem; /* Adjust size as needed */
