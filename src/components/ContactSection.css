@@ -59,3 +59,29 @@
     font-size: 1.2rem;
     color: #FFF0D1;
 }
+.social-icons {
+    filter: invert(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between the icons */
+    margin-top: 20px; /* Adds some space above the icon row */
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 50px; /* Increases the size of the icons */
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icons img {
+    width: 100%; /* Makes the SVG scale to fit the container */
+    height: 100%; /* Ensures it respects the aspect ratio */
+    object-fit: contain; /* Ensures proper scaling */
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3); /* Adds a subtle glow effect */
+}
