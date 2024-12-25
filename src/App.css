@@ -51,7 +51,7 @@
 }
 
 .stat h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
   color: #FFF0D1; /* Dark text for the numbers */
 }
@@ -80,4 +80,20 @@
     text-align: center;
     margin: 40px 0 20px; /* Add spacing above and below */
   }
+
+  .company-description {
+    max-width: 90%;
+  }
 }
+
+/* Add the fade-in effect to all sections */
+.fade-in-section {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1.5s ease-in-out; /* Smooth transition for fading */
+}
+
+.fade-in-section.visible {
+  opacity: 1; /* Show when the section is in view */
+}
+
+/* Optional: Add other transition effects like scaling or sliding */
