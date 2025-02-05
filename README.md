@@ -51,9 +51,8 @@ src/
 <h2>📸 Screenshots</h2>
 
 <p align="center">
-  <img src="screenshot.jpg" alt="Visualization.gr Screenshot" width="80%">
+  <img src="vis.png" alt="Visualization.gr Screenshot" width="80%">
   <br>
-  <em>(Replace with actual project screenshots)</em>
 </p>
 
 ---
